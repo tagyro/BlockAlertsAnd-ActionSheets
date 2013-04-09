@@ -123,6 +123,18 @@ static UIFont *buttonFont = nil;
                         nil]];
 }
 
+- (void)addButtonWithTitle:(NSString *)title isHighlight:(BOOL)isHighlight block:(void (^)())block
+{
+    if (isHighlight)
+    {
+        [self addButtonWithTitle:title color:@"red" block:block];
+    }
+    else
+    {
+        [self addButtonWithTitle:title color:@"gray" block:block];
+    }
+}
+
 - (void)addButtonWithTitle:(NSString *)title block:(void (^)())block 
 {
     [self addButtonWithTitle:title color:@"gray" block:block];

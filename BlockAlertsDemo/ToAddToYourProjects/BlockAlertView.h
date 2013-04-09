@@ -19,6 +19,7 @@
 - (void)setDestructiveButtonWithTitle:(NSString *)title block:(void (^)())block;
 - (void)setCancelButtonWithTitle:(NSString *)title block:(void (^)())block;
 - (void)addButtonWithTitle:(NSString *)title block:(void (^)())block;
+- (void)addButtonWithTitle:(NSString *)title isHighlight:(BOOL)isHighlight block:(void (^)())block;
 
 - (void)show;
 - (void)dismissWithClickedButtonIndex:(NSInteger)buttonIndex animated:(BOOL)animated;
